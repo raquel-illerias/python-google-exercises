@@ -16,8 +16,13 @@
 # If the string length is less than 3, leave it unchanged.
 # Return the resulting string.
 def verbing(s):
-  # +++your code here+++
-  return
+  if len(s) >= 3 and s.endswith('ing'):
+    return s +  'ly'
+  elif len(s) >= 3:
+    return s + 'ing'
+  else: 
+    return s
+  
 
 
 # E. not_bad
